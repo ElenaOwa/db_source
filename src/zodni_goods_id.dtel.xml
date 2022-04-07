@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZODNI_GOODS_ID</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZODNI_GOODS_ID</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Goods ID</DDTEXT>
+    <REPTEXT>Goods ID</REPTEXT>
+    <SCRTEXT_S>Goods ID</SCRTEXT_S>
+    <SCRTEXT_M>Goods ID</SCRTEXT_M>
+    <SCRTEXT_L>Goods ID</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>R</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Код товара</DDTEXT>
+     <REPTEXT>Код товара</REPTEXT>
+     <SCRTEXT_S>Код товара</SCRTEXT_S>
+     <SCRTEXT_M>Код товара</SCRTEXT_M>
+     <SCRTEXT_L>Код товара</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

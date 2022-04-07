@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZODNI_PICKUPPOINTS_ID</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZODNI_PICKUPPOINTS_ID</DOMNAME>
+    <HEADLEN>17</HEADLEN>
+    <SCRLEN1>09</SCRLEN1>
+    <SCRLEN2>17</SCRLEN2>
+    <SCRLEN3>17</SCRLEN3>
+    <DDTEXT>Pick-up points ID</DDTEXT>
+    <REPTEXT>Pick-up points ID</REPTEXT>
+    <SCRTEXT_S>Points ID</SCRTEXT_S>
+    <SCRTEXT_M>Pick-up points ID</SCRTEXT_M>
+    <SCRTEXT_L>Pick-up points ID</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>R</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Пункт выдачи</DDTEXT>
+     <REPTEXT>Пункт выдачи</REPTEXT>
+     <SCRTEXT_S>Пункт</SCRTEXT_S>
+     <SCRTEXT_M>Пункт выдачи</SCRTEXT_M>
+     <SCRTEXT_L>Пункт выдачи</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
