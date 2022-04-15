@@ -12,163 +12,36 @@
      <FUNCNAME>ZODNI_DELETE1_ORDER</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>Update for customer</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IV_ID</PARAMETER>
-       <TYP>ZODNI_ORDER_ID</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IV_ID</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Customers</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
     <item>
      <FUNCNAME>ZODNI_DELETE_CUSTOMER</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>delete customer</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IV_ID</PARAMETER>
-       <TYP>ZODNI_CUSTOMERS_ID</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IV_ID</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Customers ID</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
     <item>
      <FUNCNAME>ZODNI_INSERT_CUSTOMER</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>insert for costomer</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IS_CUSTOMER</PARAMETER>
-       <TYP>ZODN_S_CUSTOMER</TYP>
-      </RSIMP>
-      <RSIMP>
-       <PARAMETER>IT_CUSTOMER_T</PARAMETER>
-       <TYP>ZODN_T_CUSTOMER_T</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IS_CUSTOMER</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>structure for customer</STEXT>
-      </RSFDO>
-      <RSFDO>
-       <PARAMETER>IT_CUSTOMER_T</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>table type for text table customers</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
     <item>
      <FUNCNAME>ZODNI_INSERT_ORDER</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>Update for customer</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IS_ORDER</PARAMETER>
-       <TYP>ZODN_S_ORDER</TYP>
-      </RSIMP>
-      <RSIMP>
-       <PARAMETER>IT_ORDER_ITEM</PARAMETER>
-       <TYP>ZODN_T_ORDER_ITEM</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IS_ORDER</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Order</STEXT>
-      </RSFDO>
-      <RSFDO>
-       <PARAMETER>IT_ORDER_ITEM</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Order Item</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
     <item>
      <FUNCNAME>ZODNI_UPDATE_CUSTOMER</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>Update for customer</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IT_CUSTOMER</PARAMETER>
-       <TYP>ZODN_T_CUSTOMER</TYP>
-      </RSIMP>
-      <RSIMP>
-       <PARAMETER>IT_CUSTOMER_T</PARAMETER>
-       <TYP>ZODN_T_CUSTOMER_T</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IT_CUSTOMER</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Customers</STEXT>
-      </RSFDO>
-      <RSFDO>
-       <PARAMETER>IT_CUSTOMER_T</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Customer Text</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
     <item>
      <FUNCNAME>ZODNI_UPDATE_ORDER</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>Update for customer</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IT_ORDER</PARAMETER>
-       <TYP>ZODN_T_ORDER</TYP>
-      </RSIMP>
-      <RSIMP>
-       <PARAMETER>IT_ORDER_ITEM</PARAMETER>
-       <TYP>ZODN_T_ORDER_ITEM</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IT_ORDER</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Customers</STEXT>
-      </RSFDO>
-      <RSFDO>
-       <PARAMETER>IT_ORDER_ITEM</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>Customer Text</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
     <item>
      <FUNCNAME>ZODNI_UPDATE_PRODUCT</FUNCNAME>
      <UPDATE_TASK>1</UPDATE_TASK>
      <SHORT_TEXT>update for goods</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IT_PRODUCT</PARAMETER>
-       <TYP>ZODN_T_GOODS</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IT_PRODUCT</PARAMETER>
-       <KIND>P</KIND>
-       <STEXT>table type for goods</STEXT>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
    </FUNCTIONS>
   </asx:values>

@@ -4,19 +4,11 @@
   <asx:values>
    <PROGDIR>
     <NAME>LZODNI_CUSTOMERO01</NAME>
-    <SQLX>X</SQLX>
     <SUBC>I</SUBC>
     <APPL>S</APPL>
     <RLOAD>E</RLOAD>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
-   <TPOOL>
-    <item>
-     <ID>R</ID>
-     <ENTRY>Include LZODNI_CUSTOMERO01</ENTRY>
-     <LENGTH>26</LENGTH>
-    </item>
-   </TPOOL>
   </asx:values>
  </asx:abap>
 </abapGit>

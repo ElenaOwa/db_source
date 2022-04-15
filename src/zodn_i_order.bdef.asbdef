@@ -1,0 +1,65 @@
+managed; // implementation in class zbp_odn_i_order unique;
+//strict;
+
+define behavior for zodn_i_order alias Order
+implementation in class zbp_odn_i_order unique
+persistent table zodn_aorder
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  association _OrderItem { create; }
+
+  field ( numbering : managed, readonly ) OrderUuid;
+  field ( readonly ) OrderDate, OrderTime, OrderstatusId;
+  field ( mandatory ) OrderId, CustomersId;
+
+  action ( features : instance ) acceptOrder result [1] $self;
+  action ( features : instance ) rejectOrder result [1] $self;
+
+  determination setInitialStatus on modify { create; }
+  determination setInitialDate on modify { create; }
+  determination calculateOrderID on save { create; }
+
+  validation validateCustomer on save { field CustomersId; create; }
+
+  mapping for zodn_aorder
+  {
+    OrderUuid = order_uuid;
+    OrderId = order_id;
+    CustomersId = customers_id;
+    OrderstatusId = orderstatus_id;
+    OrderDate = order_date;
+    OrderTime = order_time;
+  }
+}
+
+define behavior for zodn_i_item alias Item
+implementation in class zbp_odn_i_item unique
+persistent table zodn_aitems
+lock dependent by _Order
+//authorization dependent by _Order
+//etag master <field_name>
+{
+  association _Order;
+  update;
+  delete;
+  field ( numbering : managed, readonly ) ItemsUuid;
+  field ( readonly ) OrderUid, OrderId;
+
+  validation validateProduct on save { field GoodsId; create; }
+  determination setOrdeId on modify { create; }
+
+  mapping for zodn_aitems
+  {
+    ItemsUuid = items_uuid;
+    OrderUid = order_uuid;
+    OrderId = order_id;
+    GoodsId = goods_id;
+    ItemPosition = item_position;
+    Quantity = quantity;
+  }
+}

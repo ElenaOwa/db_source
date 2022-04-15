@@ -1,0 +1,65 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Order',
+                typeNamePlural: 'Orders',
+                title: { type: #STANDARD, label: 'Order', value: 'OrderId' } }
+                                }
+annotate view ZODN_C_ORDER
+    with 
+{
+    @UI.facet: [
+    {
+      id: 'OrderStatus',
+      purpose: #HEADER,
+      type: #DATAPOINT_REFERENCE,
+      position: 20,
+      targetQualifier: 'Orderst'
+     },
+    { label: 'General Information',
+      id: 'GeneralInfo',
+      type: #COLLECTION,
+      position: 10
+       },
+    {
+      label: 'General',
+      id: 'Order',
+      type: #IDENTIFICATION_REFERENCE,
+      purpose: #STANDARD,
+      parentId: 'GeneralInfo',
+      position: 10
+    },
+    {
+      id: 'Dates',
+      purpose: #STANDARD,
+      type: #FIELDGROUP_REFERENCE,
+      parentId: 'GeneralInfo',
+      label: 'Dates',
+      position: 20,
+      targetQualifier: 'DatesGroup'
+     },
+      {
+      id: 'Item',
+      purpose: #STANDARD,
+      type: #LINEITEM_REFERENCE,
+      label: 'Items',
+      position: 20,
+      targetElement: '_OrderItem'
+    } ]
+  @UI.lineItem: [{position: 10 }]
+  OrderId;
+  @UI: { lineItem: [{position: 20, criticality:  'StatusColor'},
+  { type: #FOR_ACTION, dataAction: 'acceptOrder', label: 'Set ready' },
+  { type: #FOR_ACTION, dataAction: 'rejectOrder', label: 'Reject order' }],
+  dataPoint:  { qualifier: 'Orderst', title: 'Status', criticality: 'StatusColor' } ,
+  selectionField: [{ position: 30 }] }
+  OrderstatusId;
+  @UI: {lineItem:[{position: 30 }],  identification: [ { position: 20 } ], 
+   selectionField: [{ position: 20 }] }
+  CustomersId;
+  @UI: {lineItem:[{position:60 }],  fieldGroup: [{ qualifier: 'DatesGroup', position: 10 }], 
+   selectionField: [{ position: 20 }] }
+  OrderDate;
+  @UI: {lineItem:[{position: 70 }], fieldGroup: [{ qualifier: 'DatesGroup', position: 60 }] }
+  OrderTime;
+    
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Extended Table Maintenance (Generated)</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZODNI_BOOKF00</SOBJ_NAME>
+    <SOBJ_NAME>LZODNI_BOOKF01</SOBJ_NAME>
+    <SOBJ_NAME>LZODNI_BOOKI00</SOBJ_NAME>
+    <SOBJ_NAME>LZODNI_BOOKO01</SOBJ_NAME>
+    <SOBJ_NAME>LZODNI_BOOKT00</SOBJ_NAME>
+    <SOBJ_NAME>LZODNI_BOOKTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZODNI_BOOK</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>TABLEFRAME_ZODNI_BOOK</FUNCNAME>
+     <SHORT_TEXT>Extended Table Maintenance: Upper Level</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>TABLEPROC_ZODNI_BOOK</FUNCNAME>
+     <SHORT_TEXT>Lower-level extended table maintenance</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

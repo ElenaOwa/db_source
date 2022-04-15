@@ -1,0 +1,5 @@
+@EndUserText.label: 'Serv Definition for Shop App'
+define service ZUI_SHOP_V1 {
+  expose ZODN_C_ORDER as Orders;
+  expose ZODN_C_ITEM as Items;
+}

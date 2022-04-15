@@ -1,0 +1,24 @@
+projection;
+//strict; //Comment this line in to enable strict mode. The strict mode is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZODN_C_ORDER alias Order
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _OrderItem { create; }
+
+  use action acceptOrder;
+  use action rejectOrder;
+}
+
+define behavior for ZODN_C_ITEM alias Item
+use etag
+{
+  use update;
+  use delete;
+
+  use association _Order;
+}
